@@ -316,6 +316,11 @@ class microDb
         $this->generateDeleteColumnTable($infoColumn);
         $this->excecuteSql($params);
     }
+    
+    public function customSQL($sql){
+        $this->sql = $sql;
+        return $this->executeSQL([]);
+    }
 
     /**
      * For Select
