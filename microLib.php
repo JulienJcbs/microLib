@@ -319,7 +319,7 @@ class microDb
     
     public function customSQL($sql){
         $this->sql = $sql;
-        return $this->executeSQL([]);
+        return $this->executeSql([]);
     }
 
     /**
